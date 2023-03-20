@@ -34,10 +34,12 @@ function addCheck(){
 		frm.end_hour.focus();
 		return false;
 	}
-	else
-	alert("교과목이 입력되지 않았습니다.");
-	document.frm.focus();
-	return false;
+	else{
+		alert("교과목 등록이 완료되었습니다.");
+		document.frm.submit();
+		return true;
+	}
+	
 }
 
 function modify(){
